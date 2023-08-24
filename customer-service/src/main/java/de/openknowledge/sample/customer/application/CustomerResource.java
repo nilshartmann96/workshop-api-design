@@ -45,7 +45,7 @@ import jakarta.ws.rs.core.UriInfo;
  * RESTFul endpoint for customers
  */
 @ApplicationScoped
-@Path("/customers")
+@Path("/")
 @Consumes(MediaType.APPLICATION_JSON)
 @Produces(MediaType.APPLICATION_JSON)
 public class CustomerResource {

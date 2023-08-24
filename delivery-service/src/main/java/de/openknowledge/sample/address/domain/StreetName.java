@@ -20,7 +20,9 @@ import static org.apache.commons.lang3.Validate.notBlank;
 import de.openknowledge.sample.address.domain.StreetName.Adapter;
 import jakarta.json.bind.adapter.JsonbAdapter;
 import jakarta.json.bind.annotation.JsonbTypeAdapter;
+import jakarta.persistence.Embeddable;
 
+@Embeddable
 @JsonbTypeAdapter(Adapter.class)
 public class StreetName {
 

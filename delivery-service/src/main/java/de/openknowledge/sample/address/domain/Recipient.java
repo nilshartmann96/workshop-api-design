@@ -17,13 +17,18 @@ package de.openknowledge.sample.address.domain;
 
 import static org.apache.commons.lang3.Validate.notBlank;
 
+
 import de.openknowledge.sample.address.domain.Recipient.Adapter;
 import jakarta.json.bind.adapter.JsonbAdapter;
 import jakarta.json.bind.annotation.JsonbTypeAdapter;
+import jakarta.persistence.Column;
+import jakarta.persistence.Embeddable;
 
+@Embeddable
 @JsonbTypeAdapter(Adapter.class)
 public class Recipient {
 
+    @Column(name = "RECIPIENT")
     private String name;
 
     protected Recipient() {
@@ -42,7 +47,6 @@ public class Recipient {
     public String toString() {
         return name;
     }
-
 
     @Override
     public int hashCode() {
@@ -63,7 +67,6 @@ public class Recipient {
 
         return toString().equals(recipient.toString());
     }
-
 
     public static class Adapter implements JsonbAdapter<Recipient, String> {
 
