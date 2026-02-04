@@ -21,7 +21,7 @@
         <failOnMissingWebXml>false</failOnMissingWebXml>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <meecrowave.version>2.0.0</meecrowave.version>
-        <pactBroker.url>http://localhost:5000</pactBroker.url>
+        <pactBroker.url>http://localhost:5002</pactBroker.url>
         <deltaspike.version>1.9.6</deltaspike.version>
         <junit.version>5.8.2</junit.version>
     </properties>
