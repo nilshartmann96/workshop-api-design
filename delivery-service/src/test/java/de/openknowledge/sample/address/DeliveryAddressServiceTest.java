@@ -49,7 +49,7 @@ import rocks.limburg.cdimock.MockitoBeans;
 @IgnoreNoPactsToVerify
 @MockitoBeans(types = {AddressValidationService.class})
 @Provider("delivery-service")
-@PactBroker(url = "${pactBroker.url:http://localhost:5000}", consumerVersionSelectors = @VersionSelector(tag = "${pact.tag}"))
+@PactBroker(url = "${pactBroker.url:http://localhost:5002}", consumerVersionSelectors = @VersionSelector(tag = "${pact.tag}"))
 @MonoMeecrowaveConfig
 public class DeliveryAddressServiceTest {
 
