@@ -13,7 +13,7 @@ docker compose up --build
 Es werden folgende Services gestartet:
 - [Git Server](http://localhost:3000) (Nutzername: `openknowledge`, Password: `workshop`)
 - [Jenkins](http://localhost:4000)
-- [Pact Broker](http://localhost:5000)
+- [Pact Broker](http://localhost:5002)
 
 In dem Git-Server werden während des Startups automatisch vier Projekte
 für die bekannten vier Services angelegt.

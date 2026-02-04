@@ -7,10 +7,10 @@ Delivery Service to show Consumer-Driven Contracts
 Please run the following commands:
 ```
 docker build -t delivery-db -f Postgres-Dockerfile .
-docker tag delivery-db localhost:5000/delivery-db:1.0.0
-docker tag delivery-db localhost:5000/delivery-db:latest
-docker push localhost:5000/delivery-db:1.0.0
-docker push localhost:5000/delivery-db:latest
+docker tag delivery-db localhost:5002/delivery-db:1.0.0
+docker tag delivery-db localhost:5002/delivery-db:latest
+docker push localhost:5002/delivery-db:1.0.0
+docker push localhost:5002/delivery-db:latest
 
 cd helm-database/delivery-db/
 helm package .

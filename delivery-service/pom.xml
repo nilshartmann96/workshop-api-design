@@ -216,7 +216,7 @@
                 <artifactId>maven</artifactId>
                 <version>4.3.5</version>
                 <configuration>
-                    <pactBrokerUrl>http://localhost:5000</pactBrokerUrl>
+                    <pactBrokerUrl>http://localhost:5002</pactBrokerUrl>
                 </configuration>
             </plugin>
         </plugins>
