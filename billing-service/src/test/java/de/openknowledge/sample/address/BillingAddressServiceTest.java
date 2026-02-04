@@ -35,7 +35,7 @@ import au.com.dius.pact.provider.junitsupport.loader.VersionSelector;
 
 @IgnoreNoPactsToVerify
 @Provider("billing-service")
-@PactBroker(url = "${pactBroker.url:http://localhost:5000}", consumerVersionSelectors = @VersionSelector(tag = "${pact.tag}"))
+@PactBroker(url = "${pactBroker.url:http://localhost:5002}", consumerVersionSelectors = @VersionSelector(tag = "${pact.tag}"))
 @MonoMeecrowaveConfig
 public class BillingAddressServiceTest {
 

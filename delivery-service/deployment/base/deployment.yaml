@@ -42,7 +42,7 @@ spec:
     spec:
       containers:
         - name: delivery-postgres
-          image: host.docker.internal:5000/delivery-db:local
+          image: host.docker.internal:5002/delivery-db:local
           ports:
             - containerPort: 5432
           env:
