@@ -34,7 +34,7 @@ import au.com.dius.pact.provider.junitsupport.loader.PactBroker;
 
 @IgnoreNoPactsToVerify
 @Provider("address-validation-service")
-@PactBroker(url = "${pactBroker.url:http://localhost:5000}")
+@PactBroker(url = "${pactBroker.url:http://localhost:5002}")
 @MonoMeecrowaveConfig
 public class AddressValidationServiceTest {
 
